@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payslip-container">
+        <div class="header">
+            <h2>Payslip</h2>
+            <p>Zoonodle Inc</p>
+            <p>21023 Pearson Point Road<br>Gateway Avenue</p>
+        </div>
+        
+        <div class="employee-details">
+            <div>
+                <p>Date of Joining : 2018-06-23</p>
+                <p>Pay Period : August 2021</p>
+                <p>Worked Days : 26</p>
+            </div>
+            <div>
+                <p>Employee Name : Sally Harley</p>
+                <p>Designation : Marketing Executive</p>
+                <p>Department : Marketing</p>
+            </div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Earnings</th>
+                    <th>Amount</th>
+                    <th>Deductions</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td id="basic">10000</td>
+                    <td>Provident Fund</td>
+                    <td id="pf">1200</td>
+                </tr>
+                <tr>
+                    <td>Incentive Pay</td>
+                    <td id="incentive">1000</td>
+                    <td>Professional Tax</td>
+                    <td id="tax">500</td>
+                </tr>
+                <tr>
+                    <td>House Rent Allowance</td>
+                    <td id="hra">400</td>
+                    <td>Loan</td>
+                    <td id="loan">400</td>
+                </tr>
+                <tr>
+                    <td>Meal Allowance</td>
+                    <td id="meal">200</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Total Earnings</strong></td>
+                    <td id="total-earnings">11600</td>
+                    <td><strong>Total Deductions</strong></td>
+                    <td id="total-deductions">2100</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td><strong>Net Pay</strong></td>
+                    <td id="net-pay">9500</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="net-pay">
+            <p id="net-pay-text">9500</p>
+            <p id="net-pay-words">Nine Thousand Five Hundred</p>
+        </div>
+        
+        <div class="signatures">
+            <div>Employer Signature</div>
+            <div>Employee Signature</div>
+        </div>
+        
+        <div class="footer">
+            <p>This is a system-generated payslip</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
